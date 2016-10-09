@@ -1,16 +1,3 @@
---[[
-#
-# Show users information in groups 
-#
-# author: Arian < @Dragon_Born > 
-# our channel: @GPMod
-# Version: 2016-04-02
-#
-# Features added:
-# -- setrank on reply
-# -- get users info with their IDs and @username
-#
-]]
 
 do
 local Arian = 146340607 --put your id here(BOT OWNER ID)
@@ -96,7 +83,7 @@ local function action_by_id(extra, success, result)  -- /me <ID> function
   local um_hash = 'msgs:'..result.id..':'..extra.chat2
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'تعداد پیام های فرستاده شده : '..user_info_msgs..'\n\n'
-  text = text..'@SpartaCH'
+  text = text..'@DarKTeaMoNe'
   send_msg(extra.receiver, text, ok_cb,  true)
   else
   send_msg(extra.receiver, 'ایدی شخص مورد نظر در سیستم ثبت نشده است.\nاز دستور زیر استفاده کنید\n/info @username', ok_cb, false)
@@ -135,7 +122,7 @@ local function action_by_reply(extra, success, result)-- (reply) /info  function
   local um_hash = 'msgs:'..result.from.id..':'..result.to.id
   user_info_msgs = tonumber(redis:get(um_hash) or 0)
   text = text..'تعداد پیام های فرستاده شده : '..user_info_msgs..'\n\n'
-  text = text..'@SpartaCH'
+  text = text..'@DarKTeaMoNe'
   send_msg(extra.receiver, text, ok_cb, true)
 end
 
@@ -208,7 +195,7 @@ local function run(msg, matches)
 	 text = text..'نام گروه : '..msg.to.title..'\n'
      text = text..'ایدی گروه : '..msg.to.id
     end
-	text = text..'\n\n@SpartaCH'
+	text = text..'\n\n@DarKTeaMoNe'
     return send_msg(receiver, text, ok_cb, true)
     end
   end
@@ -250,4 +237,4 @@ return {
 
 end
 
--- By Arian
+-- By AliDarK
