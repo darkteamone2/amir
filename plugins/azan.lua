@@ -1,11 +1,4 @@
---[[
 
-#
-#     @GPMOD
-#   @Dragon_Born
-#      
-
-]]
 do
 function run_bash(str)
     local cmd = io.popen(str)
@@ -78,7 +71,7 @@ function run(msg, matches)
 	  text = text..'\n💠➎ غروب آفتاب ➠ '..data.Sunset
 	  text = text..'\n💠➏ اذان مغرب    ➠ '..data.Maghrib
 	  text = text..'\n💠➐ اعشاء           ➠ '..data.Isha
-	  text = text..'\n\n@SpartaSoft'
+	  text = text..'\n\n@DarKTeaMoNe'
 	if string.match(text, '0') then text = string.gsub(text, '0', '۰') end
 	if string.match(text, '1') then text = string.gsub(text, '1', '۱') end
 	if string.match(text, '2') then text = string.gsub(text, '2', '۲') end
