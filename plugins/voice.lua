@@ -17,7 +17,7 @@ local text = matches[1]
       else
   local url = "http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text="..textc
   local receiver = get_receiver(msg)
-  local file = download_to_file(url,'Spartacus.mp3')
+  local file = download_to_file(url,'@DarKTeaMoNe.mp3')
       send_audio('channel#id'..msg.to.id, file, ok_cb , false)
 end
 end
@@ -36,5 +36,3 @@ return {
 
 end
 
---tnx alireza_pt
---ch @NotronX_Ch
