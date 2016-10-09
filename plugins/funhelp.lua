@@ -64,7 +64,6 @@ return {
   patterns = {
     "^[!#/]funhelp$",
     "^([Ff]unhelp)$",
-    "[/]fhelp@Spartacus_Team_Bot$"
   }, 
   run = run 
 }
