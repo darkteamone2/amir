@@ -212,7 +212,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-	"admin",
+    "admin",
     "onservice",
     "inrealm",
     "ingroup",
@@ -221,27 +221,42 @@ function create_config( )
     "stats",
     "anti_spam",
     "owners",
-    "plugins",
-    "arabic_lock",
     "set",
     "get",
     "broadcast",
     "invite",
     "all",
     "leave_ban",
-	"supergroup",
-	"whitelist",
-	"msg_checks"
+    "supergroup",
+    "whitelist",
+    "msg_checks",
+    "onservice",
+    "i",
+    "info",
+    "helps",
+    "cmds",
+    "plugins",
+    "lock_video",
+    "lock_tag",
+    "lock_photo",
+    "lock_reply",
+    "lock_sticker",
+    "expire",
+    "filter",
+    "modhelp",
+    "sikmember",
+    "onlline",
+    "Rmsg",
+    "wb",
+    "fwd",
+    "lock_media",
+    "lock_fwd",
+    "lock_english"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {265801248,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Spartacus Bot V2.3 Supergroups
-    
-    An advanced Bot Based On TG-CLI Written in Lua
-    
-    Developer : @IR_Telegram_Developer
-    Channel : https://Telegram.me/SpartaSoft
-    Github : https://github.com/spartacusteam/spartacus/tree/supergroups
+    about_text = [[DarK Tm V1.0
+TeaM : @DarKTeaMoNe
 ]],
     help_text_realm = [[
 Realm Commands:
