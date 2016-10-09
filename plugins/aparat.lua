@@ -1,11 +1,4 @@
---[[
 
-#
-#     @GPMOD
-#   @Dragon_Born
-#      
-
-]]
 
 local function run(msg, matches)
 	if matches[1]:lower() == 'aparat' then
