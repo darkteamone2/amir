@@ -33,7 +33,6 @@ return {
   patterns = {
     "^[!#/]cmds$",
     "^([Cc]mds)$",
-    "[/]fhelp@Spartacus_Team_Bot$"
   }, 
   run = run 
 }
