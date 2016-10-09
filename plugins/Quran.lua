@@ -27,7 +27,7 @@ local target = matches[2]
 return view_sura(chat_id, target)
 elseif matches [1] == "uran" then
 local qlist = http.request(umbrella_cp.."list.txt") 
-qlist = string.gsub(qlist, "@UmbrellaTeam", "@SpartaSoft\n\nبا زدن دستور\nSura <شماره>\nمیتوانید متن سوره را مشاهده نمایید")
+qlist = string.gsub(qlist, "@UmbrellaTeam", "@DarKTeaMoNe\n\nبا زدن دستور\nSura <شماره>\nمیتوانید متن سوره را مشاهده نمایید")
 return qlist
 end
 end
