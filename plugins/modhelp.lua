@@ -115,8 +115,7 @@ return {
   patterns = {
     "^[!#/]modhelp$",
     "^([Mm]odhelp)$",
-    "[/]fhelp@Spartacus_Team_Bot$"
-  }, 
+ }, 
   run = run 
 }
 
