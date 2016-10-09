@@ -55,7 +55,7 @@
 #--                                              --                   
 #--------------------------------------------------
 #--                                              --
-#--       Developers: @SpartaSoft                --
+#--       Developers: @DarKTeaMoNe               --
 #--                                              --
 #--                                              --
 #--------------------------------------------------
@@ -122,11 +122,11 @@ sleep 0.5
 
 
 echo ""
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
 
 sleep 1.5
 echo -e "$bld$f4 CHECKING PROCESSES...$rst"
@@ -274,11 +274,11 @@ sleep 0.5
 
 
 echo ""
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
 # Starting preliminar setup
 sleep 1.5
 echo -e "$bld$f4 CHECKING PROCESSES...$rst"
@@ -544,11 +544,11 @@ while getopts ":tsTSih" opt; do
 	echo ""
 	echo -e "\e[0m"
 
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
-echo -e "\033[38;5;208m @GPMod    :)      @SpartaSoft \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
+echo -e "\033[38;5;208m @DarKTeaMoNe    :)      @DarKTeaMoNe \033[0;00m"
 echo ""
 	exit 1
       ;;
