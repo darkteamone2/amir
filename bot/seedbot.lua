@@ -212,15 +212,11 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "admin",
-    "onservice",
-    "inrealm",
+
     "ingroup",
     "inpm",
     "banhammer",
-    "stats",
     "anti_spam",
-    "owners",
     "set",
     "get",
     "broadcast",
@@ -241,14 +237,8 @@ function create_config( )
     "lock_photo",
     "lock_reply",
     "lock_sticker",
-    "expire",
     "filter",
     "modhelp",
-    "sikmember",
-    "onlline",
-    "Rmsg",
-    "wb",
-    "fwd",
     "lock_media",
     "lock_fwd",
     "lock_english"
