@@ -1752,7 +1752,7 @@ local function run(msg, matches)
 			end
 			local group_link = data[tostring(msg.to.id)]['settings']['set_link']
 			if not group_link then
-				return "Create a link using /newlink first!\n\nOr if I am not creator use /setlink to set your link"
+				return "🌐لینک ثبت نشده است 🌐\n ➰ جهت ثبت لینک (setlink) بزنید ➰  \n TeaM : https://telegram.me/joinchat/D9fOID9BvegCHxA-9C9rlQ"
 			end
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
 			return "🌐لینک گروه :\n"..group_link
