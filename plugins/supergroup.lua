@@ -48,7 +48,7 @@ local function check_member_super(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-	  local text = '➰ گروه اضافه شد ➰'
+	  local text = '➰ گروه اضافه شد ➰\n🆔 @DarkTeamOne'
       return reply_msg(msg.id, text, ok_cb, false)
     end
   end
@@ -72,7 +72,7 @@ local function check_member_superrem(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = nil
       save_data(_config.moderation.data, data)
-	  local text = 'SuperGroup has been removed'
+	  local text = '🔱گروه از لیست گروه های بات حذف شد🔱\n🆔 @DarkTeamOne'
       return reply_msg(msg.id, text, ok_cb, false)
     end
   end
@@ -198,11 +198,11 @@ local function lock_group_links(msg, data, target)
   end
   local group_link_lock = data[tostring(target)]['settings']['lock_link']
   if group_link_lock == 'yes' then
-    return '➰ لینک در گروه بسته شد ➰'
+    return '➰ لینک در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_link'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰ لینک در گروه بسته شد ➰'
+    return '➰ لینک در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -212,11 +212,11 @@ local function unlock_group_links(msg, data, target)
   end
   local group_link_lock = data[tostring(target)]['settings']['lock_link']
   if group_link_lock == 'no' then
-    return '➰ لینک در گروه بسته شد ➰'
+    return '➰ لینک در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_link'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰ لینک در گروه باز شد ➰'
+    return '➰ لینک در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 -----------------------------------------------------------------------
@@ -226,11 +226,11 @@ local function lock_group_ads(msg, data, target)
   end
   local group_ads_lock = data[tostring(target)]['settings']['lock_ads']
   if group_ads_lock == 'yes' then
-    return '➰ ADS DaR GroUP BasTe ShoD ➰'
+    return '➰ ADS DaR GroUP BasTe ShoD ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_ads'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰ ADS DaR GroUP BasTe ShoD ➰'
+    return '➰ ADS DaR GroUP BasTe ShoD ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -240,11 +240,11 @@ local function unlock_group_ads(msg, data, target)
   end
   local group_ads_lock = data[tostring(target)]['settings']['lock_ads']
   if group_ads_lock == 'no' then
-    return '➰ ADS DaR GroUP BasTe ShoD ➰'
+    return '➰ ADS DaR GroUP BasTe ShoD ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_ads'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰ ADS DaR GroUP BaZ ShoD ➰'
+    return '➰ ADS DaR GroUP BaZ ShoD ➰\n🆔 @DarkTeamOne'
   end
 end
 --------------------------------------------------------------------------
@@ -254,11 +254,11 @@ local function lock_group_photo(msg, data, target)
   end
   local group_photo_lock = data[tostring(target)]['settings']['lock_photo']
   if group_photo_lock == 'yes' then
-    return '➰گذاشتن عکس در گروه بسته شد ➰'
+    return '➰گذاشتن عکس در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_photo'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن عکس در گروه بسته شد ➰'
+    return '➰گذاشتن عکس در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -268,11 +268,11 @@ local function unlock_group_photo(msg, data, target)
   end
   local group_photo_lock = data[tostring(target)]['settings']['lock_photo']
   if group_photo_lock == 'no' then
-    return '➰گذاشتن عکس در گروه بسته شد ➰'
+    return '➰گذاشتن عکس در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_photo'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن عکس در گروه باز شد ➰'
+    return '➰گذاشتن عکس در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 ------------------------------------------------------------------------
@@ -282,11 +282,11 @@ local function lock_group_reply(msg, data, target)
   end
   local group_reply_lock = data[tostring(target)]['settings']['lock_reply']
   if group_reply_lock == 'yes' then
-    return '➰ ریپلی در گروه بسته شد ➰'
+    return '➰ ریپلی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_reply'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰ ریپلی در گروه بسته شد ➰'
+    return '➰ ریپلی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -296,11 +296,11 @@ local function unlock_group_reply(msg, data, target)
   end
   local group_reply_lock = data[tostring(target)]['settings']['lock_reply']
   if group_reply_lock == 'no' then
-    return '➰ ریپلی در گروه بسته شد ➰'
+    return '➰ ریپلی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_reply'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰ ریپلی در گروه باز شد ➰'
+    return '➰ ریپلی در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 ------------------------------------------------------------------------
@@ -310,11 +310,11 @@ local function lock_group_emoji(msg, data, target)
   end
   local group_emoji_lock = data[tostring(target)]['settings']['lock_emoji']
   if group_emoji_lock == 'yes' then
-    return '➰ اموجی در گروه بسته شد ➰'
+    return '➰ اموجی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_emoji'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰ اموجی در گروه بسته شد ➰'
+    return '➰ اموجی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -324,11 +324,11 @@ local function unlock_group_emoji(msg, data, target)
   end
   local group_emoji_lock = data[tostring(target)]['settings']['lock_emoji']
   if group_emoji_lock == 'no' then
-    return '➰ اموجی در گروه بسته شد ➰'
+    return '➰ اموجی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_emoji'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰ اموجی در گروه باز شد ➰'
+    return '➰ اموجی در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 ------------------------------------------------------------------------
@@ -338,11 +338,11 @@ local function lock_group_badword(msg, data, target)
   end
   local group_badword_lock = data[tostring(target)]['settings']['lock_badword']
   if group_badword_lock == 'yes' then
-    return '➰فحش در گروه بسته شد ➰'
+    return '➰فحش در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_badword'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰فحش در گروه بسته شد ➰'
+    return '➰فحش در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -352,11 +352,11 @@ local function unlock_group_badword(msg, data, target)
   end
   local group_badword_lock = data[tostring(target)]['settings']['lock_badword']
   if group_badword_lock == 'no' then
-    return '➰فحش در گروه بسته شد ➰'
+    return '➰فحش در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_badword'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰فحش در گروه باز شد ➰'
+    return '➰فحش در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 ------------------------------------------------------------------------
@@ -366,11 +366,11 @@ local function lock_group_video(msg, data, target)
   end
   local group_video_lock = data[tostring(target)]['settings']['lock_video']
   if group_video_lock == 'yes' then
-    return '➰گذاشتن فیلم در گروه بسته شد ➰'
+    return '➰گذاشتن فیلم در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_video'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن فیلم در گروه بسته شد ➰'
+    return '➰گذاشتن فیلم در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -380,11 +380,11 @@ local function unlock_group_video(msg, data, target)
   end
   local group_video_lock = data[tostring(target)]['settings']['lock_video']
   if group_video_lock == 'no' then
-    return '➰گذاشتن فیلم در گروه بسته شد ➰'
+    return '➰گذاشتن فیلم در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_video'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن فیلم در گروه باز شد ➰'
+    return '➰گذاشتن فیلم در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 -------------------------------------------------------------------------
@@ -394,11 +394,11 @@ local function lock_group_audio(msg, data, target)
   end
   local group_audio_lock = data[tostring(target)]['settings']['lock_audio']
   if group_audio_lock == 'yes' then
-    return '➰گذاشتن صدا در گروه بسته شد ➰'
+    return '➰گذاشتن صدا در گروه بسته شد \n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_audio'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن صدا در گروه بسته شد ➰'
+    return '➰گذاشتن صدا در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -408,11 +408,11 @@ local function unlock_group_audio(msg, data, target)
   end
   local group_audio_lock = data[tostring(target)]['settings']['lock_audio']
   if group_audio_lock == 'no' then
-    return '➰گذاشتن صدا در گروه بسته شد ➰'
+    return '➰گذاشتن صدا در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_audio'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن صدا در گروه باز شد ➰'
+    return '➰گذاشتن صدا در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 -------------------------------------------------------------------------
@@ -422,11 +422,11 @@ local function lock_group_contact(msg, data, target)
   end
   local group_contact_lock = data[tostring(target)]['settings']['lock_contact']
   if group_contact_lock == 'yes' then
-    return '➰گذاشتن شماره در گروه بسته شد ➰'
+    return '➰گذاشتن شماره در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_contact'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن شماره در گروه بسته شد ➰'
+    return '➰گذاشتن شماره در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -436,11 +436,11 @@ local function unlock_group_contact(msg, data, target)
   end
   local group_contact_lock = data[tostring(target)]['settings']['lock_contact']
   if group_contact_lock == 'no' then
-    return '➰گذاشتن شماره در گروه بسته شد ➰'
+    return '➰گذاشتن شماره در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_contact'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن شماره در گروه باز شد ➰'
+    return '➰گذاشتن شماره در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 -------------------------------------------------------------------------
@@ -450,11 +450,11 @@ local function lock_group_media(msg, data, target)
   end
   local group_media_lock = data[tostring(target)]['settings']['lock_media']
   if group_media_lock == 'yes' then
-    return '➰MeDia DaR GroUP BasTe ShoD➰'
+    return '➰مدیا در گروه بسته شد➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_media'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰MeDia DaR GroUP BasTe ShoD➰'
+    return '➰مدیا در گروه بسته شد➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -464,11 +464,11 @@ local function unlock_group_media(msg, data, target)
   end
   local group_media_lock = data[tostring(target)]['settings']['lock_media']
   if group_media_lock == 'no' then
-    return '➰MeDia DaR GroUP BasTe ShoD➰'
+    return '➰مدیا در گروه بسته شد➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_media'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰MeDia DaR GroUP BaZ ShoD➰'
+    return '➰مدیا در گروه باز شد➰\n🆔 @DarkTeamOne'
   end
 end
 ------------------------------------------
@@ -478,11 +478,11 @@ local function lock_group_tag(msg, data, target)
   end
   local group_tag_lock = data[tostring(target)]['settings']['lock_tag']
   if group_tag_lock == 'yes' then
-    return '➰گذاشتن تگ در گروه بسته شد ➰'
+    return '➰گذاشتن تگ در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_tag'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن تگ در گروه بسته شد ➰'
+    return '➰گذاشتن تگ در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -492,11 +492,11 @@ local function unlock_group_tag(msg, data, target)
   end
   local group_tag_lock = data[tostring(target)]['settings']['lock_tag']
   if group_tag_lock == 'no' then
-    return '➰گذاشتن تگ در گروه بسته شد ➰'
+    return '➰گذاشتن تگ در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_tag'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن تگ در گروه باز شد ➰'
+    return '➰گذاشتن تگ در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 -----------------------------------------------------
@@ -506,11 +506,11 @@ local function lock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_link_lock == 'yes' then
-    return '➰گذاشتن استیکر در گروه بسته شد ➰'
+    return '➰گذاشتن استیکر در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن استیکر در گروه بسته شد ➰'
+    return '➰گذاشتن استیکر در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -520,11 +520,11 @@ local function unlock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'no' then
-    return '➰گذاشتن استیکر در گروه بسته شد ➰'
+    return '➰گذاشتن استیکر در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن استیکر در گروه باز شد ➰'
+    return '➰گذاشتن استیکر در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 -------------------------------------------------------------------
@@ -534,11 +534,11 @@ local function lock_group_fwd(msg, data, target)
   end
   local group_fwd_lock = data[tostring(target)]['settings']['lock_fwd']
   if group_fwd_lock == 'yes' then
-    return '➰فروارد در گروه بسته شد ➰'
+    return '➰فروارد در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_fwd'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰فروارد در گروه بسته شد ➰'
+    return '➰فروارد در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -548,11 +548,11 @@ local function unlock_group_fwd(msg, data, target)
   end
   local group_fwd_lock = data[tostring(target)]['settings']['lock_fwd']
   if group_fwd_lock == 'no' then
-    return '➰فروارد در گروه بسته شد ➰'
+    return '➰فروارد در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_fwd'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰فروارد در گروه باز شد ➰'
+    return '➰فروارد در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 local function lock_group_english(msg, data, target)
@@ -561,11 +561,11 @@ local function lock_group_english(msg, data, target)
   end
   local group_link_english = data[tostring(target)]['settings']['lock_english']
   if group_english_lock == 'yes' then
-    return '➰گذاشتن متن های انگلیسی در گروه بسته شد ➰'
+    return '➰گذاشتن متن های انگلیسی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_english'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن متن های انگلیسی در گروه بسته شد ➰'
+    return '➰گذاشتن متن های انگلیسی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -575,11 +575,11 @@ local function unlock_group_english(msg, data, target)
   end
   local group_english_lock = data[tostring(target)]['settings']['lock_english']
   if group_english_lock == 'no' then
-    return '➰گذاشتن متن های انگلیسی در گروه بسته شد ➰'
+    return '➰گذاشتن متن های انگلیسی در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_english'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰گذاشتن متن های انگلیسی در گروه باز شد ➰'
+    return '➰گذاشتن متن های انگلیسی در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 local function lock_group_spam(msg, data, target)
@@ -587,15 +587,15 @@ local function lock_group_spam(msg, data, target)
     return
   end
   if not is_owner(msg) then
-    return "Owners only!"
+    return "فقط مخصوص اونر!\n🆔 @DarkTeamOne"
   end
   local group_spam_lock = data[tostring(target)]['settings']['lock_spam']
   if group_spam_lock == 'yes' then
-    return '➰اسپم در گروه بسته شد ➰'
+    return '➰اسپم در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_spam'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰اسپم در گروه بسته شد ➰'
+    return '➰اسپم در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -605,11 +605,11 @@ local function unlock_group_spam(msg, data, target)
   end
   local group_spam_lock = data[tostring(target)]['settings']['lock_spam']
   if group_spam_lock == 'no' then
-    return '➰اسپم در گروه بسته شد ➰'
+    return '➰اسپم در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_spam'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰اسپم در گروه باز شد ➰'
+    return '➰اسپم در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -619,11 +619,11 @@ local function lock_group_flood(msg, data, target)
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'yes' then
-    return 'Flood is already locked'
+    return '➰فلود در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['flood'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Flood has been locked'
+    return '➰فلود در گروه بسته بود از قبل ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -633,11 +633,11 @@ local function unlock_group_flood(msg, data, target)
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'no' then
-    return 'Flood is not locked'
+    return '➰فلود در گروه باز بود ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['flood'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Flood has been unlocked'
+    return '➰فلود در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -647,11 +647,11 @@ local function lock_group_arabic(msg, data, target)
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'yes' then
-    return '➰Arabic DaR GroUp BasTE ShoD➰'
+    return '➰عربی در گروه بسته شد➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰Arabic DaR GroUp BasTE ShoD➰'
+    return '➰عربی در گروه بسته بود از قبل➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -661,11 +661,11 @@ local function unlock_group_arabic(msg, data, target)
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'no' then
-    return '➰Arabic DaR GroUp BaZ ShoD➰'
+    return '➰عربی در گروه از قبل باز بود➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰Arabic DaR GroUp BaZ ShoD➰'
+    return '➰عربی در گروه باز شد➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -675,12 +675,12 @@ local function lock_group_membermod(msg, data, target)
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'yes' then
-    return '➰ورود ممبر به گروه بسته شد➰'
+    return '➰ورود ممبر به گروه بسته شد➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_member'] = 'yes'
     save_data(_config.moderation.data, data)
   end
-  return '➰ورود ممبر به گروه بسته شد➰'
+  return '➰ورود ممبر به گروه از قبل بسته بود➰\n🆔 @DarkTeamOne'
 end
 
 local function unlock_group_membermod(msg, data, target)
@@ -689,11 +689,11 @@ local function unlock_group_membermod(msg, data, target)
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'no' then
-    return '➰ورود ممبر به گروه بسته شد➰'
+    return '➰ورود ممبر به گروه بسته نبود➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_member'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰ورود ممبر به گروه باز شد➰'
+    return '➰ورود ممبر به گروه باز شد➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -703,11 +703,11 @@ local function lock_group_rtl(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_rtl']
   if group_rtl_lock == 'yes' then
-    return '➰در گروه بسته شدRTL➰'
+    return '➰در گروه بسته شدRTL➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_rtl'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰در گروه بسته شدRTL➰'
+    return '➰در گروه بسته بود از قبلRTL➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -717,11 +717,11 @@ local function unlock_group_rtl(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_rtl']
   if group_rtl_lock == 'no' then
-    return '➰در گروه باز شدRTL➰'
+    return '➰در گروه بسته نبودRTL➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_rtl'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰در گروه باز شدRTL➰'
+    return '➰در گروه باز شدRTL➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -731,11 +731,11 @@ local function lock_group_tgservice(msg, data, target)
   end
   local group_tgservice_lock = data[tostring(target)]['settings']['lock_tgservice']
   if group_tgservice_lock == 'yes' then
-    return '➰در گروه بسته شدTgservice➰'
+    return '➰در گروه بسته شدTgservice➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_tgservice'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰در گروه بسته شدTgservice➰'
+    return '➰در گروه بسته بود از قبلTgservice➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -745,11 +745,11 @@ local function unlock_group_tgservice(msg, data, target)
   end
   local group_tgservice_lock = data[tostring(target)]['settings']['lock_tgservice']
   if group_tgservice_lock == 'no' then
-    return '➰در گروه بسته شدTgservice➰'
+    return '➰در گروه باز بودTgservice➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_tgservice'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰در گروه باز شدTgservice➰'
+    return '➰در گروه باز شدTgservice➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -759,11 +759,11 @@ local function lock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'yes' then
-    return '➰فرستادن استیکر در گروه بسته شد ➰'
+    return '➰فرستادن استیکر در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰فرستادن استیکر در گروه بسته شد ➰'
+    return '➰فرستادن استیکر در گروه بسته بود از قبل ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -773,11 +773,11 @@ local function unlock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'no' then
-    return '➰فرستادن استیکر در گروه باز شد ➰'
+    return '➰فرستادن استیکر در گروه باز بود ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰فرستادن استیکر در گروه باز شد ➰'
+    return '➰فرستادن استیکر در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -787,11 +787,11 @@ local function lock_group_contacts(msg, data, target)
   end
   local group_contacts_lock = data[tostring(target)]['settings']['lock_contacts']
   if group_contacts_lock == 'yes' then
-    return '➰اشتراک گذاری شماره در گروه بسته شد ➰'
+    return '➰اشتراک گذاری شماره در گروه بسته شد ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_contacts'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '➰اشتراک گذاری شماره در گروه بسته شد ➰'
+    return '➰اشتراک گذاری شماره در گروه بسته بود از قبل ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -801,11 +801,11 @@ local function unlock_group_contacts(msg, data, target)
   end
   local group_contacts_lock = data[tostring(target)]['settings']['lock_contacts']
   if group_contacts_lock == 'no' then
-    return '➰اشتراک گذاری شماره در گروه باز شد ➰'
+    return '➰اشتراک گذاری شماره در گروه باز بود ➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['lock_contacts'] = 'no'
     save_data(_config.moderation.data, data)
-    return '➰اشتراک گذاری شماره در گروه باز شد ➰'
+    return '➰اشتراک گذاری شماره در گروه باز شد ➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -815,11 +815,11 @@ local function enable_strict_rules(msg, data, target)
   end
   local group_strict_lock = data[tostring(target)]['settings']['strict']
   if group_strict_lock == 'yes' then
-    return '⚫️ تظیمات به شدت اجرا میشود⚫️'
+    return '⚫️ تنظیمات سختگیرانه فعال شد⚫️\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['strict'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '🌐 تنظیمات  به شدت اجرا خواهد شد 🌐'
+    return '🌐تنظیمات سختگیرانه فعال بود از ثبل 🌐\n🆔 @DarkTeamOne'
   end
 end
 
@@ -829,11 +829,11 @@ local function disable_strict_rules(msg, data, target)
   end
   local group_strict_lock = data[tostring(target)]['settings']['strict']
   if group_strict_lock == 'no' then
-    return '🌐 تنظیمات  به شدت اجرا نمیشود 🌐'
+    return '🌐تنظیمات سختگیرانه در گروه فعال نبود🌐\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['strict'] = 'no'
     save_data(_config.moderation.data, data)
-    return '⚫️تظیمات از حالت سختگیرانه برداشته شد 🌐'
+    return '⚫️تنظیمات سختگیرانه غیر فعال شد 🌐\n🆔 @DarkTeamOne'
   end
 end
 --End supergroup locks
@@ -846,14 +846,14 @@ local function set_rulesmod(msg, data, target)
   local data_cat = 'rules'
   data[tostring(target)][data_cat] = rules
   save_data(_config.moderation.data, data)
-  return 'SuperGroup rules set'
+  return '✅قوانین گروه با موفقیت ذخیره شد✅\n🆔 @DarkTeamOne'
 end
 
 --'Get supergroup rules' function
 local function get_rules(msg, data)
   local data_cat = 'rules'
   if not data[tostring(msg.to.id)][data_cat] then
-    return 'No rules available.'
+    return '❌قوانینی وجود ندارد❌\n🆔 @DarkTeamOne'
   end
   local rules = data[tostring(msg.to.id)][data_cat]
   local group_name = data[tostring(msg.to.id)]['settings']['set_name']
@@ -864,7 +864,7 @@ end
 --Set supergroup to public or not public function
 local function set_public_membermod(msg, data, target)
   if not is_momod(msg) then
-    return "For moderators only!"
+    return "فقط برای ادمین ها!"
   end
   local group_public_lock = data[tostring(target)]['settings']['public']
   local long_id = data[tostring(target)]['long_id']
@@ -873,12 +873,12 @@ local function set_public_membermod(msg, data, target)
 	save_data(_config.moderation.data, data)
   end
   if group_public_lock == 'yes' then
-    return 'Group is already public'
+    return '➰گروه از قبل عمومی بود➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['public'] = 'yes'
     save_data(_config.moderation.data, data)
   end
-  return 'SuperGroup is now: public'
+  return '➰سوپر گروه الان عمومی شد➰\n🆔 @DarkTeamOne'
 end
 
 local function unset_public_membermod(msg, data, target)
@@ -892,12 +892,12 @@ local function unset_public_membermod(msg, data, target)
 	save_data(_config.moderation.data, data)
   end
   if group_public_lock == 'no' then
-    return 'Group is not public'
+    return '➰گروه عمومی نمیباشد➰\n🆔 @DarkTeamOne'
   else
     data[tostring(target)]['settings']['public'] = 'no'
 	data[tostring(target)]['long_id'] = msg.to.long_id
     save_data(_config.moderation.data, data)
-    return 'SuperGroup is now: not public'
+    return '➰سوپر گروه از حالت عمومی درومد➰\n🆔 @DarkTeamOne'
   end
 end
 
@@ -1037,39 +1037,39 @@ local function promote2(receiver, member_username, user_id)
   local group = string.gsub(receiver, 'channel#id', '')
   local member_tag_username = string.gsub(member_username, '@', '(at)')
   if not data[group] then
-    return send_large_msg(receiver, 'SuperGroup is not added.')
+    return send_large_msg(receiver, '❌گروه اضافه نشده است')
   end
   if data[group]['moderators'][tostring(user_id)] then
     return send_large_msg(receiver, member_username..' is already a moderator.')
   end
   data[group]['moderators'][tostring(user_id)] = member_tag_username
   save_data(_config.moderation.data, data)
-  send_large_msg(receiver, member_username..' has been promoted.')
+  send_large_msg(receiver, member_username..' ✔️ارتقا یافت')
 end
 
 local function demote2(receiver, member_username, user_id)
   local data = load_data(_config.moderation.data)
   local group = string.gsub(receiver, 'channel#id', '')
   if not data[group] then
-    return send_large_msg(receiver, 'Group is not added.')
+    return send_large_msg(receiver, '❌گروه اضافه نشده است')
   end
   if not data[group]['moderators'][tostring(user_id)] then
     return send_large_msg(receiver, member_tag_username..' is not a moderator.')
   end
   data[group]['moderators'][tostring(user_id)] = nil
   save_data(_config.moderation.data, data)
-  send_large_msg(receiver, member_username..' has been demoted.')
+  send_large_msg(receiver, member_username..' ✔️تنذل یافت')
 end
 
 local function modlist(msg)
   local data = load_data(_config.moderation.data)
   local groups = "groups"
   if not data[tostring(groups)][tostring(msg.to.id)] then
-    return 'SuperGroup is not added.'
+    return '❌گروه اضاف نشده است'
   end
   -- determine if table is empty
   if next(data[tostring(msg.to.id)]['moderators']) == nil then
-    return 'No moderator in this group.'
+    return '⚫️ این گروه ادمین وجود ندارد'
   end
   local i = 1
   local message = '\nList of moderators for ' .. string.gsub(msg.to.print_name, '_', ' ') .. ':\n'
@@ -1153,13 +1153,13 @@ function get_message_callback(extra, success, result)
 		local user_id = result.from.peer_id
 		local channel_id = "channel#id"..result.to.peer_id
 		if is_admin2(result.from.peer_id) then
-			return send_large_msg(channel_id, "You can't demote global admins!")
+			return send_large_msg(channel_id, "شما نمیتواند ادمین های گولبال رو تنذل کنید!")
 		end
 		channel_demote(channel_id, "user#id"..user_id, ok_cb, false)
 		if result.from.username then
-			text = "@"..result.from.username.." has been demoted from admin"
+			text = "@"..result.from.username.." تنذیل یافت ✔️"
 		else
-			text = "[ "..user_id.." ] has been demoted from admin"
+			text = "[ "..user_id.." ] ارتقا یافت به ادمینی✔️"
 		end
 		savelog(msg.to.id, name_log.." ["..msg.from.id.."] demoted: ["..user_id.."] from admin by reply")
 		send_large_msg(channel_id, text)
@@ -1177,9 +1177,9 @@ function get_message_callback(extra, success, result)
 			save_data(_config.moderation.data, data)
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] set: ["..result.from.peer_id.."] as owner by reply")
 			if result.from.username then
-				text = "@"..result.from.username.." [ "..result.from.peer_id.." ] added as owner"
+				text = "@"..result.from.username.." [ "..result.from.peer_id.." ] صاحب گروه شد✳️\n🆔 @DarkTeamOne"
 			else
-				text = "[ "..result.from.peer_id.." ] added as owner"
+				text = "[ "..result.from.peer_id.." ] صاحب گروه شد✳️\n🆔 @DarkTeamOne"
 			end
 			send_large_msg(channel_id, text)
 		end
@@ -1231,10 +1231,10 @@ function get_message_callback(extra, success, result)
 		print(chat_id)
 		if is_muted_user(chat_id, user_id) then
 			unmute_user(chat_id, user_id)
-			send_large_msg(receiver, "["..user_id.."] removed from the muted user list")
+			send_large_msg(receiver, "["..user_id.."] از لیست میوت درومد✳️\n🆔 @DarkTeamOne")
 		elseif is_admin1(msg) then
 			mute_user(chat_id, user_id)
-			send_large_msg(receiver, " ["..user_id.."] added to the muted user list")
+			send_large_msg(receiver, " ["..user_id.."] به لیست بی صدا اضافه شد✳️\n🆔 @DarkTeamOne")
 		end
 	end
 end
@@ -1257,15 +1257,15 @@ local function cb_user_info(extra, success, result)
 			send_large_msg(receiver, text)]]
 	if get_cmd == "demoteadmin" then
 		if is_admin2(result.peer_id) then
-			return send_large_msg(receiver, "You can't demote global admins!")
+			return send_large_msg(receiver, "شما نمیتوانید ادمین های گولبال رو تنذل دهید!")
 		end
 		local user_id = "user#id"..result.peer_id
 		channel_demote(receiver, user_id, ok_cb, false)
 		if result.username then
-			text = "@"..result.username.." has been demoted from admin"
+			text = "@"..result.username.." از ادمینی با موفقیت درومد✳️\n🆔 @DarkTeamOne"
 			send_large_msg(receiver, text)
 		else
-			text = "[ "..result.peer_id.." ] has been demoted from admin"
+			text = "[ "..result.peer_id.." ] از ادمینی با موفقیت درومد✳️\n🆔 @DarkTeamOne"
 			send_large_msg(receiver, text)
 		end
 	elseif get_cmd == "promote" then
@@ -1367,14 +1367,14 @@ local function callbackres(extra, success, result)
 		local user_id = "user#id"..result.peer_id
 		local channel_id = extra.channel
 		if is_admin2(result.peer_id) then
-			return send_large_msg(channel_id, "You can't demote global admins!")
+			return send_large_msg(channel_id, "شما نمیتوانید ادمین های گولبال رو تنذل دهید!")
 		end
 		channel_demote(channel_id, user_id, ok_cb, false)
 		if result.username then
-			text = "@"..result.username.." has been demoted from admin"
+			text = "@"..result.username.." از ادمین با موفقیت درومد✳️\n🆔 @DarkTeamOne"
 			send_large_msg(channel_id, text)
 		else
-			text = "@"..result.peer_id.." has been demoted from admin"
+			text = "@"..result.peer_id.." از ادمین با موفقیت درومد✳️\n🆔 @DarkTeamOne"
 			send_large_msg(channel_id, text)
 		end
 		local receiver = extra.channel
@@ -1386,10 +1386,10 @@ local function callbackres(extra, success, result)
 		local chat_id = string.gsub(receiver, 'channel#id', '')
 		if is_muted_user(chat_id, user_id) then
 			unmute_user(chat_id, user_id)
-			send_large_msg(receiver, " ["..user_id.."] removed from muted user list")
+			send_large_msg(receiver, " ["..user_id.."] از لیست میوت درومد✳️\n🆔 @DarkTeamOneremoved from muted user list")
 		elseif is_owner(extra.msg) then
 			mute_user(chat_id, user_id)
-			send_large_msg(receiver, " ["..user_id.."] added to muted user list")
+			send_large_msg(receiver, " ["..user_id.."] به لیست بی صداها اضافه شد✳️\n🆔 @DarkTeamOne")
 		end
 	end
 end
@@ -1422,10 +1422,10 @@ if get_cmd == "channel_block" then
         return send_large_msg("channel#id"..channel_id, "Leave using kickme command")
       end
       if is_momod2(user_id, channel_id) and not is_admin2(sender) then
-        return send_large_msg("channel#id"..channel_id, "You can't kick mods/owner/admins")
+        return send_large_msg("channel#id"..channel_id, "شما نمیتوانید صاحب گروه یا ادمین را کیک کنید!\n🆔 @DarkTeamOne")
       end
       if is_admin2(user_id) then
-        return send_large_msg("channel#id"..channel_id, "You can't kick other admins")
+        return send_large_msg("channel#id"..channel_id, "شما نمیتوانید ادمین هارو کیک کنید!\n🆔 @DarkTeamOne")
       end
       if v.username then
         text = ""
@@ -1447,10 +1447,10 @@ elseif get_cmd == "setadmin" then
       local channel_id = "channel#id"..cb_extra.msg.to.id
       channel_set_admin(channel_id, user_id, ok_cb, false)
       if v.username then
-        text = "@"..v.username.." ["..v.peer_id.."] has been set as an admin"
+        text = "@"..v.username.." ["..v.peer_id.."] اضافه شد به ادمین ها✔️\n🆔 @DarkTeamOne"
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] set admin @"..v.username.." ["..v.peer_id.."]")
       else
-        text = "["..v.peer_id.."] has been set as an admin"
+        text = "["..v.peer_id.."] اضافه شد به ادمین ها✔️\n🆔 @DarkTeamOne"
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] set admin "..v.peer_id)
       end
 	  if v.username then
@@ -1485,9 +1485,9 @@ elseif get_cmd == "setadmin" then
 					save_data(_config.moderation.data, data)
 					savelog(channel, name_log.."["..from_id.."] set ["..v.peer_id.."] as owner by username")
 				if result.username then
-					text = member_username.." ["..v.peer_id.."] added as owner"
+					text = member_username.." ["..v.peer_id.."] صاحب گروه شد✔️\n🆔 @DarkTeamOne"
 				else
-					text = "["..v.peer_id.."] added as owner"
+					text = "["..v.peer_id.."] صاحب گروه شد✔️\n🆔 @DarkTeamOne"
 				end
 			end
 		elseif memberid and vusername ~= member and vpeer_id ~= memberid then
@@ -1502,7 +1502,7 @@ elseif get_cmd == "setadmin" then
 				data[tostring(channel)]['set_owner'] = tostring(memberid)
 				save_data(_config.moderation.data, data)
 				savelog(channel, name_log.."["..from_id.."] set ["..memberid.."] as owner by username")
-				text = "["..memberid.."] added as owner"
+				text = "["..memberid.."] صاحب گروه شد✔️\n🆔 @DarkTeamOne"
 			end
 		end
 	end
@@ -1529,7 +1529,7 @@ local function set_supergroup_photo(msg, success, result)
     send_large_msg(receiver, 'Photo saved!', ok_cb, false)
   else
     print('Error downloading: '..msg.id)
-    send_large_msg(receiver, 'Failed, please try again!', ok_cb, false)
+    send_large_msg(receiver, '❌ارور❌لطفا دوباره تلاش کنید', ok_cb, false)
   end
 end
 
@@ -1548,7 +1548,7 @@ local function run(msg, matches)
 			if not is_admin1(msg) then
 				return
 			end
-			return "Already a SuperGroup"
+			return "✔️درحال حاظر سوپر گروه میباشد✔️\n🆔 @DarkTeamOne"
 		end
 	end
 	if msg.to.type == 'channel' then
@@ -1562,7 +1562,7 @@ local function run(msg, matches)
 				return
 			end
 			if is_super_group(msg) then
-				return reply_msg(msg.id, '➰ گروه اضافه شد ➰', ok_cb, false)
+				return reply_msg(msg.id, '➰ گروه اضافه شد ➰\n🆔 @DarkTeamOne', ok_cb, false)
 			end
 			print("SuperGroup "..msg.to.print_name.."("..msg.to.id..") added")
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] added SuperGroup")
@@ -2287,7 +2287,7 @@ local function run(msg, matches)
 			data[tostring(msg.to.id)]['settings']['flood_msg_max'] = flood_max
 			save_data(_config.moderation.data, data)
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] set flood to ["..matches[2].."]")
-			return 'Flood has been set to: '..matches[2]
+			return '⚫️ حساسیت تنظیم شد ⚫️\n🆔 @DarkTeamOne'
 		end
 		if matches[1] == 'public' and is_momod(msg) then
 			local target = msg.to.id
@@ -2368,9 +2368,9 @@ local function run(msg, matches)
 				if not is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: mute "..msg_type)
 					mute(chat_id, msg_type)
-					return "Mute "..msg_type.."  has been enabled"
+					return "Mute "..msg_type.."  فعال شد✅\n🆔 @DarkTeamOne"
 				else
-					return "Mute "..msg_type.." is already on"
+					return "Mute "..msg_type.." فعال بود ✅\n🆔 @DarkTeamOne"
 				end
 			end
 		end
@@ -2381,7 +2381,7 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return msg_type.." has been unmuted"
+					return msg_type.." ان میوت شد\n🆔 @DarkTeamOne"
 				else
 					return "Mute "..msg_type.." is already off"
 				end
@@ -2391,7 +2391,7 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return msg_type.." has been unmuted"
+					return msg_type.." has been unmuted\n🆔 @DarkTeamOne"
 				else
 					return "Mute "..msg_type.." is already off"
 				end
@@ -2441,9 +2441,9 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return "Mute "..msg_type.." has been disabled"
+					return "Mute "..msg_type.." غیرفعال شد✅\n🆔 @DarkTeamOne"
 				else
-					return "Mute "..msg_type.." is already disabled"
+					return "Mute "..msg_type.." غیرفعال بود✅\n🆔 @DarkTeamOne"
 				end
 			end
 		end
@@ -2462,11 +2462,11 @@ local function run(msg, matches)
 				if is_muted_user(chat_id, user_id) then
 					unmute_user(chat_id, user_id)
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] removed ["..user_id.."] from the muted users list")
-					return "["..user_id.."] removed from the muted users list"
+					return "["..user_id.."] از لیست میوت درومد✳️\n🆔 @DarkTeamOne"
 				elseif is_owner(msg) then
 					mute_user(chat_id, user_id)
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] added ["..user_id.."] to the muted users list")
-					return "["..user_id.."] added to the muted user list"
+					return "["..user_id.."] به لیست بی صدا اضافه شد✳️\n🆔 @DarkTeamOne"
 				end
 			elseif matches[1] == "muteuser" and matches[2] and not string.match(matches[2], '^%d+$') then
 				local receiver = get_receiver(msg)
@@ -2581,7 +2581,7 @@ return {
 	"^([Bb]ots)$",
 	"^([Ww]ho)$",
 	"^([Kk]icked)$",
-    "^([Bb]lock) (.*)",
+  "^([Bb]lock) (.*)",
 	"^([Bb]lock)",
 	"^([Tt]osuper)$",
 	--"^([Ii][Dd])$",
